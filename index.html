@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo18s0YpTBbDtv3XUhKjbq7OiWKf-lmQgd6fQn50v-Xe_cmGfr9ygcfoGSbQ3vqFmJqMA&usqp=CAU">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currrency Convertor</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    
+    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;">
+        <div class="card-body">
+            <h2 class="text-center">Currency Calculator</h2> <br>
+    <input type="number" class="form-control" name="Amount" value="" placeholder="Enter amount"> <br>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">From</span>
+      </div>
+    <select id="c1" class="form-control" name="c1">
+      <option value="AUD" class= "AUD">AUD</option><option value="BGN"class="BGN">BGN</option>
+      <option value="BRL" class="BRL">BRL</option><option value="CAD"class = "CAD">CAD</option>
+      <option value="CHF" class = "CHF">CHF</option><option value="CNY"class = "CNY">CNY</option>
+      <option value="CZK" class = "CZK">CZK</option><option value="DKK"class = "DKK">DKK</option>
+      <option value="EUR"class = "EUR">EURO</option><option value="GBP" class = "GBP">GBP</option>
+      <option value="HKD"class = "HKD">HKD</option><option value="HRK"class = "HRK">HRK</option>
+      <option value="HUF"class = "HUF">HUF</option><option value="IDR"class = "IDR">IDR</option>
+      <option value="ILS"class = "ILS">ILS</option><option value="INR"class = "INR" selected> INR</option>
+      <option value="ISK"class = "ISK">ISK</option><option value="JPY"class = "JPY">JPY</option>
+      <option value="KRW"class = "KRW">KRW</option><option value="MXN"class = "MXN">MXN</option>
+      <option value="MYR"class = "MYR">MYR</option><option value="NOK"class = "NOK">NOK</option>
+      <option value="NZD"class = "NZD">NZD</option><option value="PHP"class = "PHP">PHP</option>
+      <option value="PLN"class = "PLN">PLN</option><option value="RON"class = "RON">RON</option>
+      <option value="RUB"class = "RUB">RUB</option><option value="SEK"class = "SEK">SEK</option>
+      <option value="SGD"class = "SGD">SGD</option><option value="THB"class = "THB">THB</option>
+      <option value="TRY"class = "TRY">TRY</option><option value="USD"class = "USD" >USD</option>
+      <option value="ZAR"class = "ZAR">ZAR</option>
+    </select>
+</div><br>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">To</span>
+      </div>
+    <select id="c2" class="form-control" name="c2" data-flip="false" > 
+     <option value="">--Currency to exchange--</option>
+      <option value="AUD" class= "AUD">AUD</option><option value="BGN"class="BGN">BGN</option>
+      <option value="BRL" class="BRL">BRL</option><option value="CAD"class = "CAD">CAD</option>
+      <option value="CHF" class = "CHF">CHF</option><option value="CNY"class = "CNY">CNY</option>
+      <option value="CZK" class = "CZK">CZK</option><option value="DKK"class = "DKK">DKK</option>
+      <option value="EUR"class = "EUR">EURO</option><option value="GBP" class = "GBP">GBP</option>
+      <option value="HKD"class = "HKD">HKD</option><option value="HRK"class = "HRK">HRK</option>
+      <option value="HUF"class = "HUF">HUF</option><option value="IDR"class = "IDR">IDR</option>
+      <option value="ILS"class = "ILS">ILS</option><option value="INR"class = "INR">INR</option>
+      <option value="ISK"class = "ISK">ISK</option><option value="JPY"class = "JPY">JPY</option>
+      <option value="KRW"class = "KRW">KRW</option><option value="MXN"class = "MXN">MXN</option>
+      <option value="MYR"class = "MYR">MYR</option><option value="NOK"class = "NOK">NOK</option>
+      <option value="NZD"class = "NZD">NZD</option><option value="PHP"class = "PHP">PHP</option>
+      <option value="PLN"class = "PLN">PLN</option><option value="RON"class = "RON">RON</option>
+      <option value="RUB"class = "RUB">RUB</option><option value="SEK"class = "SEK">SEK</option>
+      <option value="SGD"class = "SGD">SGD</option><option value="THB"class = "THB">THB</option>
+      <option value="TRY"class = "TRY">TRY</option><option value="USD"class = "USD" >USD</option>
+      <option value="ZAR"class = "ZAR">ZAR</option>
+    </select>
+</div><br>
+    &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  <button type="submit" name="button" class=" btn btn-primary" onclick = "doConvert()">Convert</button> <br>
+    <br>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Converted Value</span>
+          </div>
+      <div type="input" id="res" class="form-control">
+          </div>
+        </div>
+          <br>
+          <div type="text"  id="text" ></div>
+
+      
+</div>
+</div>
+</body>
+<script src="currency.js"></script>
+</html>
+
+
+    
