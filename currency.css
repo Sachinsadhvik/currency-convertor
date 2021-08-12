@@ -18,9 +18,10 @@ body{display:flex;
     }
 
     #text{
+        font-variant: small-caps;
         font-weight: thin;
         font-size: 20px;
-        color: red;
+        color: black;
       }
         #res{ font-weight: bold;
 }
