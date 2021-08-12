@@ -6,8 +6,8 @@ baseInfo= {"rates":{ "EUR": 1,"CAD":1.5501,"HKD":9.1737,"ISK":161.3,"PHP":57.147
 
       x= money +" "+ currency1+ " equals to" ;
    if(money>0 && currency2!=""){
-    document.querySelector("#res").innerHTML=((1/baseInfo["rates"][currency1]) * money *   baseInfo["rates"][currency2]).toFixed(2) + " "+ currency2
-    document.querySelector("#text").innerHTML= x +" "+ ((1/baseInfo["rates"][currency1]) * money *   baseInfo["rates"][currency2]).toFixed(3) + " "+ currency2;
+    document.querySelector("#res").innerHTML=((1/baseInfo["rates"][currency1]) * money *   baseInfo["rates"][currency2]).toFixed(4) + " "+ currency2
+    document.querySelector("#text").innerHTML= x +" "+ ((1/baseInfo["rates"][currency1]) * money *   baseInfo["rates"][currency2]).toFixed(2) + " "+ currency2;
    }
 
 
